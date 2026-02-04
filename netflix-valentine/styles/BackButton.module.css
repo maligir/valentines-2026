@@ -1,0 +1,36 @@
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 4px;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.25s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.backButton:hover {
+  background-color: var(--valentine-soft);
+}
+
+.backButton:active {
+  transform: scale(0.98);
+}
+
+.backButton.exiting {
+  opacity: 0;
+  transform: translateX(-12px);
+  pointer-events: none;
+}
+
+.arrow {
+  font-size: 1.25rem;
+  line-height: 1;
+}

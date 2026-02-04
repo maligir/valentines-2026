@@ -1,0 +1,17 @@
+/* src/styles/globals.css */
+html,
+body {
+  background-color: #141414;
+  color: white;
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}

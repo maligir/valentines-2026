@@ -1,0 +1,36 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 20px 40px;
+  z-index: 100;
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav.transparent {
+  background-color: transparent;
+}
+
+.black {
+  background-color: #141414;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--valentine-primary);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+  color: var(--valentine-primary-hover);
+}
+
+.logoHeart {
+  width: 32px;
+  height: 32px;
+}

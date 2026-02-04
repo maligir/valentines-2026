@@ -1,0 +1,59 @@
+.banner {
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideActive {
+  opacity: 1;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(20, 20, 20, 1),
+    rgba(28, 20, 24, 0.5),
+    rgba(20, 20, 20, 0.3)
+  );
+}
+
+.content {
+  position: absolute;
+  bottom: 30%;
+  left: 40px;
+  max-width: 600px;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.contentVisible {
+  opacity: 1;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+}
+
+.description {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin: 0;
+}
